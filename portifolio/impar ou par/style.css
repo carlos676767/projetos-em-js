@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-desenhado-a-mao-com-contorno-de-borboleta-fofa_23-2149021590.jpg?w=900&t=st=1695054308~exp=1695054908~hmac=24bdc5cf34aefd0bdc12261418c9952cc9c868cd83fb048ef0773af9598eaf0b);
+    background-size: cover;
+}
+
+.mae{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.filha{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #ffa43a;
+    border: 4px solid #ffbf75;
+    padding: 15px;
+}
+
+h1{
+    color: white;
+}
+
+input{
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e6a15c;
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #e6a15c;
+    color: white;
+}
+
+p{
+    color: white;
+}

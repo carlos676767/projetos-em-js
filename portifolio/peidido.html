@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clica ai</title>
+    <style>
+      .mae {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      body {
+        background-color: #d387ab;
+        background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+      }
+
+      button {
+        background-color: #ff00ff;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      }
+
+      p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mae">
+      <div class="filha">
+        <p>Aceita namorar comigo?</p>
+        <button id="aceita">Sim</button>
+        <button id="nao">Não</button>
+      </div>
+    </div>
+
+    <script>
+      aceita.addEventListener("click", function () {
+        const aceita = document.getElementById("aceita");
+        const nao = document.getElementById("nao");
+        alert("pedido aceito, te amo");
+        location.href = "https://www.youtube.com/watch?v=_uYSpB7h5ow";
+      });
+      nao.addEventListener("click", function () {
+        nao.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

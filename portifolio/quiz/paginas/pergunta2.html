@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+   background-image: url(https://img.freepik.com/fotos-gratis/corredor-escolar-abandonado-com-janelas-abertas-na-zona-da-cidade-de-chernobyl-da-cidade-fantasma-de-radioatividade_627829-11728.jpg?w=996&t=st=1694114630~exp=1694115230~hmac=dd9f528b35a07ea3841746f767c5feea9c6602a74be70df8c61e5818d6bf4269);
+   background-size: cover;
+}
+
+
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="mae">
+        <div class="filha">
+            <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/pripyat.jpg" alt="" width="300px">
+            <label for="text">quando ocorreu o acidente de cherobyl ?</label>
+            <br>
+            <br>
+            <button id="botao1">28 de fevereiro</button>
+            <button id="botao2">26 de abril 1986</button>
+            <button id="botao3">10 de agosto de 2099</button>
+            <button id="botao4">nenhuma das anteriores</button>
+            <button id="enviar" class="enviar" style="display: none;">Enviar</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        var botao1 = document.getElementById("botao1")
+var botao2 = document.getElementById("botao2")
+var botao3 = document.getElementById("botao3")
+var botao4 = document.getElementById("botao4")
+var enviar = document.getElementById("enviar")
+
+botao2.addEventListener("click", function(){
+    botao2.style.backgroundColor = "#32CD32"
+    if(enviar.style.display === "none"){ // ira verificar se o botao esta invisvel
+        enviar.style.display = "block" // caso estiver o botao ira aparecer.
+    }else{
+        enviar.style.display = "none" // caso clicar novamente no botao ele ira desaparecer
+    }
+    
+})
+
+
+botao1.addEventListener("click", function(){ // 
+    botao1.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+botao3.addEventListener("click", function(){
+   botao3.style.backgroundColor = "red"
+   location.href = "..//index.html"
+})
+
+botao4.addEventListener("click", function(){
+    botao4.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+enviar.addEventListener("click", function(){
+    location.href = "pergunta3.html"
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.mae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+   background-image: url(20056945_brazil_08.jpg);
+   background-size: cover;
+}
+
+
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: gray;
+}

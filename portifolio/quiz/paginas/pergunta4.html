@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+   background-image: url(https://img.freepik.com/fotos-gratis/mosteiro-da-ortodoxia-em-bogolyubovo-no-verao_1398-4257.jpg?w=900&t=st=1694115773~exp=1694116373~hmac=30d9dbb41c2548a7985531625956afa8a1fd2148c4666ce82a29b020c2829066);
+   background-size: cover;
+}
+
+
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="mae">
+        <div class="filha">
+            <img src="https://img.freepik.com/fotos-gratis/kremlin-de-moscou-na-noite_1398-3899.jpg?w=900&t=st=1694115691~exp=1694116291~hmac=8a9eb4c32dc656376d62a7e1f3a8269577601f536cc3e2ff8adbdd22f895a7de" alt="" width="300px">
+            <label for="text">qual o maior pais do mundo?</label>
+            <br>
+            <br>
+            <button id="botao1">Brasil</button>
+            <button id="botao2">Russia</button>
+            <button id="botao3">coreia do sul</button>
+            <button id="botao4">nenhuma das anteriores</button>
+            <button id="enviar" class="enviar" style="display: none;">Enviar</button>
+            <p style="display: none;" id="texto">Existem mais de 510 milhões de <br> quilômetros quadrados de superfície <br>
+                 terrestre no planeta e estes são os dez  <br>maiores territórios: <br>
+                  Rússia: 17.098.246 km² (3,352%)</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var botao1 = document.getElementById("botao1")
+var botao2 = document.getElementById("botao2")
+var botao3 = document.getElementById("botao3")
+var botao4 = document.getElementById("botao4")
+var enviar = document.getElementById("enviar")
+var texto = document.getElementById("texto")
+
+
+botao2.addEventListener("click", function(){
+    botao2.style.backgroundColor = "#32CD32"
+    if(enviar.style.display === "none" && texto.style.display === "none"){ // ira verificar se o botao esta invisvel
+        enviar.style.display = "block" // caso estiver o botao ira aparecer.
+        texto.style.display = "block"
+    }else{
+        enviar.style.display = "none" // caso clicar novamente no botao ele ira desaparecer
+        texto.style.display = "none" 
+    }
+    
+})
+
+
+botao1.addEventListener("click", function(){ // 
+    botao1.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+botao3.addEventListener("click", function(){
+   botao3.style.backgroundColor = "red"
+   location.href = "..//index.html"
+})
+
+botao4.addEventListener("click", function(){
+    botao4.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+enviar.addEventListener("click", function(){
+    location.href = "final.html"
+})
+    </script>
+</body>
+</html>

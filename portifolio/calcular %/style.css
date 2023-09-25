@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-aquarela-com-elementos-desenhados-a-mao_23-2148859294.jpg?w=900&t=st=1694725597~exp=1694726197~hmac=b0d1e5d2db0fa8a36fd7723b826f5aed71675d2f4466ec6e3ee837b526ca6678);
+    background-size: cover;
+}
+
+.mae{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+
+}
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #759eff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+    background-color: #75c7ff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+label{
+    color: white;
+}
+
+#tela{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: #759eff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+p{
+    color: white;
+    font-weight: bold;
+}

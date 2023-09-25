@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+   background-image: url(https://img.freepik.com/fotos-gratis/vista-antiga-da-cidade_1417-1735.jpg?w=900&t=st=1694115406~exp=1694116006~hmac=142087af7f9be3d66855ebafcafae96a5207e48ae10594bee1160177c4e2a134);
+   background-size: cover;
+}
+
+
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="mae">
+        <div class="filha">
+            <img src="https://www.estadosecapitaisdobrasil.com/wp-content/uploads/2015/11/historia-da-bahia.jpg" alt="" width="300px">
+            <label for="text">qual foi a primeira capital do brasil?</label>
+            <br>
+            <br>
+            <button id="botao1">Sorriso MT</button>
+            <button id="botao2">Salvador BA</button>
+            <button id="botao3">Rio de janeiro</button>
+            <button id="botao4">nenhuma das anteriores</button>
+            <button id="enviar" class="enviar" style="display: none;">Enviar</button>
+        </div>
+    </div>
+
+
+
+    <script>
+        var botao1 = document.getElementById("botao1")
+var botao2 = document.getElementById("botao2")
+var botao3 = document.getElementById("botao3")
+var botao4 = document.getElementById("botao4")
+var enviar = document.getElementById("enviar")
+
+botao2.addEventListener("click", function(){
+    botao2.style.backgroundColor = "#32CD32"
+    if(enviar.style.display === "none"){ // ira verificar se o botao esta invisvel
+        enviar.style.display = "block" // caso estiver o botao ira aparecer.
+    }else{
+        enviar.style.display = "none" // caso clicar novamente no botao ele ira desaparecer
+    }
+    
+})
+
+
+botao1.addEventListener("click", function(){ // 
+    botao1.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+botao3.addEventListener("click", function(){
+   botao3.style.backgroundColor = "red"
+   location.href = "..//index.html"
+})
+
+botao4.addEventListener("click", function(){
+    botao4.style.backgroundColor = "red"
+    location.href = "..//index.html"
+})
+
+enviar.addEventListener("click", function(){
+    location.href = "pergunta4.html"
+})
+    </script>
+</body>
+</html>

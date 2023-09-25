@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Lobster+Two&family=Pacifico&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.mae{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -45px;
+
+}
+
+.cima{
+    font-family: 'Caprasimo', cursive;
+}
+
+
+.filha{
+    display: flex;
+    gap: 5px ;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #FFA9A9;
+}
+
+body{
+    background-image: url(https://img.freepik.com/vetores-gratis/gravura-de-fundo-floral-desenhado-a-mao_23-2149019096.jpg?w=900&t=st=1695671068~exp=1695671668~hmac=56aa867290a55f137dfcd3b46d849945b1e25d58874c94abeeb41a11045faea1);
+    background-size: cover;
+}
+
+#botao, #botao2{
+    color: white;
+    background-color: #E57373;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 3.4px solid #FFCFCF;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.cite{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    color: black;
+    font-size: 25px;
+}
+
+#limpar{
+    border: 3px solid #FFCFCF;
+    color: white;
+    background-color: #E57373;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+#limpar, #botao:hover{
+    cursor: pointer;
+}
+
+
+
+
+label{
+    color: #FF5353;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1.5px solid #FF7E7E;
+}
+
+input{
+    border: none;
+    outline: none;
+    border: 1px solid #FF7E7E;
+    color: #FFA9A9;
+    font-weight: 2px
+    ;
+}

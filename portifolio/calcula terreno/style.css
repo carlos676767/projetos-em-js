@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.mae {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mae p {
+    text-align: center;
+}
+
+.filha {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD700;
+    padding: 30px;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+
+
+
+#mostrar{
+    background-color: white;
+    width: 150px;
+    padding: 15px;
+    color: black;
+    font-style: italic;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+body{
+    background-color: black;
+}
+
+label{
+    color: black;
+   
+}
+
+input{
+    width: 100%;
+    border-radius: 3px;
+    
+}
+
+.calcular{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+   
+
+}
+button{
+   width: 100%;
+   background-color: black; 
+   letter-spacing: 1px;
+   color: #FFD700;
+   border: none;
+   padding: 20px;
+   font-size: 13px;
+   font-weight: bold;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+hr{
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+}
+
+.cs{
+    display: flex;
+    flex-direction: column;
+    margin-top: -500px;
+    margin-left: 100px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+a{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+
+@media(max-width: 768px){
+    .cs{
+        display: none;
+    }
+}
+
+@media(max-width: 320px){
+    .filha{
+        padding: 10px;
+    }
+}
+
+
