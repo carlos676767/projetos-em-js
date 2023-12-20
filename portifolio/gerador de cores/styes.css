@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.mae{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.cores{
+    display: flex;
+}
+
+.cores2{
+    display: flex;
+  
+}
+
+
+button{
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 768px){
+    .mae{
+       display: flex;
+       flex-wrap: wrap;
+       font-size: 15px;
+    }
+
+    .cores{
+        display: flex;
+     
+    }
+}
+

@@ -60,9 +60,6 @@ button:hover{
             <button id="botao3">coreia do sul</button>
             <button id="botao4">nenhuma das anteriores</button>
             <button id="enviar" class="enviar" style="display: none;">Enviar</button>
-            <p style="display: none;" id="texto">Existem mais de 510 milhões de <br> quilômetros quadrados de superfície <br>
-                 terrestre no planeta e estes são os dez  <br>maiores territórios: <br>
-                  Rússia: 17.098.246 km² (3,352%)</p>
         </div>
     </div>
 
@@ -79,7 +76,7 @@ var texto = document.getElementById("texto")
 
 botao2.addEventListener("click", function(){
     botao2.style.backgroundColor = "#32CD32"
-    if(enviar.style.display === "none" && texto.style.display === "none"){ // ira verificar se o botao esta invisvel
+    if(enviar.style.display === "none"){ // ira verificar se o botao esta invisvel
         enviar.style.display = "block" // caso estiver o botao ira aparecer.
         texto.style.display = "block"
     }else{
